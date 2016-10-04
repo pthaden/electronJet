@@ -1,9 +1,14 @@
 {
-  "name": "oraclejet-app",
+  "name": "electronJet",
   "version": "1.0.0",
-  "description": "A sample Oracle JavaScript Extension Toolkit (JET) web app",
+  "description": "A sample Oracle JavaScript Extension Toolkit (JET) web app wrapped in Electron",
   "author": {
-    "name": "Oracle Jet Team"
+    "name": "Paul Thaden"
+  },
+  "scripts": {
+    "postinstall": "bower install && grunt bowercopy",
+    "prestart": "npm install",
+    "start": "grunt build && grunt serve"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
