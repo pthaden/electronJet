@@ -5,6 +5,7 @@
   "author": {
     "name": "Paul Thaden"
   },
+  "main": "main.js",
   "scripts": {
     "postinstall": "bower install && grunt bowercopy",
     "prestart": "npm install",
