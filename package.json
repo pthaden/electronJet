@@ -9,7 +9,7 @@
   "scripts": {
     "postinstall": "bower install && grunt bowercopy",
     "prestart": "npm install",
-    "start": "grunt build && grunt serve"
+    "start": "grunt build && electron ."
   },
   "devDependencies": {
     "electron": "^1.4.2",
