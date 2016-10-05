@@ -5,8 +5,8 @@
 /*
  * Your application specific code will go here
  */
-define(['ojs/ojcore', 'knockout', 'ojs/ojknockout'],
-  function(oj, ko) {
+define(['ojs/ojcore', 'knockout', 'jquery', 'ojs/ojknockout'],
+  function(oj, ko, $) {
      function ControllerViewModel() {
        var self = this;
 
@@ -33,6 +33,9 @@ define(['ojs/ojcore', 'knockout', 'ojs/ojknockout'],
         new footerLink('Terms Of Use', 'termsOfUse', 'http://www.oracle.com/us/legal/terms/index.html'),
         new footerLink('Your Privacy Rights', 'yourPrivacyRights', 'http://www.oracle.com/us/legal/privacy/index.html')
       ]);
+
+      
+
      }
 
      return new ControllerViewModel();

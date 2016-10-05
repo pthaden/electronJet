@@ -47,10 +47,11 @@ requirejs.config(
  * by the modules themselves), we are listing them explicitly to get the references to the 'oj' and 'ko'
  * objects in the callback
  */
-require(['ojs/ojcore', 'knockout', 'appController', 'ojs/ojknockout', 'ojs/ojbutton', 'ojs/ojtoolbar', 'ojs/ojmenu'],
+require(['ojs/ojcore', 'knockout', 'appController', 'ojs/ojknockout', 'ojs/ojbutton', 'ojs/ojtoolbar', 'ojs/ojmenu', 'ojs/ojmodule'],
   function (oj, ko, app) { // this callback gets executed when all required modules are loaded
     
     $(function() {
+      
       
       function init() {
         // Bind your ViewModel for the content of the whole page body.
